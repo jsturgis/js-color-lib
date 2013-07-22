@@ -21,8 +21,15 @@ var h = hsv.h,
 	colorObjFromHSV = colorLib.functions.hsvToRgb(h, s, v);
 ```
 
-license
--------
+##Build
+if you want to build this project yourself just clone the this project and run:
+```bash
+npm install .
+grunt
+```
+
+
+###license
 
 See `LICENSE` file.
 
