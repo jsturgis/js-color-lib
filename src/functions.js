@@ -1,4 +1,3 @@
-/*global $: true*/
 /*jslint anon:true, sloppy:true, nomen:true, white: true*/
 
 window.colorLib = window.colorLib || {};

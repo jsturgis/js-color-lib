@@ -20,3 +20,11 @@ var h = hsv.h,
 	v = hsv.v,
 	colorObjFromHSV = colorLib.functions.hsvToRgb(h, s, v);
 ```
+
+license
+-------
+
+See `LICENSE` file.
+
+Most of this code is from the Less project
+> Copyright (c) 2009-2013 Alexis Sellier & The Core Less Team
