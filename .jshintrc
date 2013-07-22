@@ -1,0 +1,14 @@
+{
+  "curly": true,
+  "eqnull": true,
+  "eqeqeq": true,
+  "undef": true,
+  "browser": true,
+  "loopfunc": true,
+  "globals": {
+    "colorLib": true,
+    "exports": true,
+    "module": true,
+    "define": true
+  }
+}

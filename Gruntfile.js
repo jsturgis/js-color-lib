@@ -9,16 +9,32 @@ module.exports = function(grunt) {
       },
       build: {
         files: {
-          'build/<%= pkg.name %>.min.js': ['src/color.js', 'src/dimensions.js', 'src/functions.js']
+          'build/<%= pkg.name %>.min.js': ['build/<%= pkg.name %>.js']
+        }
+      }
+    },
+    jshint: {
+      options: {
+        jshintrc: '.jshintrc'
+      },
+      files: {
+        src: ['build/<%= pkg.name %>.js']
+      }
+    },
+    concat: {
+      all: {
+        files: {
+          'build/<%= pkg.name %>.js': ['src/intro.js', 'src/functions.js', 'src/color.js', 'src/dimensions.js', 'src/outro.js']
         }
       }
     }
   });
 
-  // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-concat');
 
   // Default task(s).
-  grunt.registerTask('default', ['uglify']);
+  grunt.registerTask('default', ['concat:all','jshint','uglify']);
 
 };
