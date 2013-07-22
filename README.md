@@ -4,8 +4,7 @@ js-color-lib
 a collection of color manipulation functions.
 
 
-Usage
-=====
+##Usage
 
 ```javascript
 // get a color instance from RGB
