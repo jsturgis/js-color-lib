@@ -1,7 +1,7 @@
 js-color-lib
 ============
 
-a collection of color manipulation functions.
+Color value manipulation library.
 
 
 ##Usage
