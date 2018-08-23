@@ -4,7 +4,7 @@ js-color-lib
 Color value manipulation library.
 
 
-##Usage
+## Usage
 
 ```javascript
 // get a color instance from RGB
@@ -21,17 +21,12 @@ var h = hsv.h,
 	colorObjFromHSV = colorLib.functions.hsvToRgb(h, s, v);
 ```
 
-##Build
+## Build
 if you want to build this project yourself just clone the this project and run:
 ```bash
 npm install .
 grunt
 ```
-
-
-###license
-
-See `LICENSE` file.
 
 Most of this code is from the Less project
 > Copyright (c) 2009-2013 Alexis Sellier & The Core Less Team
